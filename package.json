@@ -1,0 +1,33 @@
+{
+  "name": "situable-score-cli",
+  "version": "1.0.0",
+  "description": "Situable Score CLI",
+  "main": "dist/index.js",
+  "dist": {
+    "situable-score": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "rimraf dist/ && babel ./src --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabinskyt/situable-score-cli.git"
+  },
+  "author": "Gabriel M Tello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabinskyt/situable-score-cli/issues"
+  },
+  "homepage": "https://github.com/gabinskyt/situable-score-cli#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^3.0.2"
+  }
+}
