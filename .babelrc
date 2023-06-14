@@ -1,4 +1,6 @@
 {
-    "presets": ["es2015"],
-    "plugins": ["transform-class-properties"]
+    "presets": ["@babel/preset-env"],
+    "plugins": [
+        ["@babel/plugin-proposal-decorators", { "version": "2023-05" }],
+        ["@babel/plugin-transform-class-properties"]    ]
 }
